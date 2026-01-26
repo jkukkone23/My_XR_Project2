@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 13464008}
   - component: {fileID: 13464007}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 339887759}
   - component: {fileID: 339887758}
   m_Layer: 0
-  m_Name: Plane (3)
+  m_Name: Wall_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 597321979}
   - component: {fileID: 597321978}
   m_Layer: 0
-  m_Name: Plane (4)
+  m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 1440946597}
   - component: {fileID: 1440946596}
   m_Layer: 0
-  m_Name: Plane (5)
+  m_Name: Wall_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1306,7 +1306,7 @@ GameObject:
   - component: {fileID: 1583316797}
   - component: {fileID: 1583316796}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: Wall_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 1893728901}
   - component: {fileID: 1893728900}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Wall_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3096,9 +3096,9 @@ SceneRoots:
   - {fileID: 13464010}
   - {fileID: 1893728903}
   - {fileID: 1440946599}
+  - {fileID: 1583316799}
   - {fileID: 339887761}
   - {fileID: 597321981}
-  - {fileID: 1583316799}
   - {fileID: 89428711}
   - {fileID: 1863565542}
   - {fileID: 86318235}
