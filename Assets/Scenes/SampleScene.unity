@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 86318235}
   - component: {fileID: 86318234}
   - component: {fileID: 86318233}
+  - component: {fileID: 86318236}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -593,6 +594,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &86318236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86318232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98be1a1902164a54a89eadc11f819ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchAction: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
 --- !u!1 &89428709
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +743,37 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &106103165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 106103166}
+  m_Layer: 0
+  m_Name: RoomPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &106103166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106103165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &107304723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1274,6 +1320,7 @@ GameObject:
   - component: {fileID: 1139014107}
   - component: {fileID: 1139014106}
   - component: {fileID: 1139014105}
+  - component: {fileID: 1139014109}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -1322,7 +1369,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 251104dbecd7f384f863e0cf3cc3fa1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1368,6 +1415,20 @@ Transform:
   - {fileID: 2089124815}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139014109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139014104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411e020efac050045a8fa78d0c798d46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeedY: 30
+  rotationSpeedX: 20
 --- !u!1 &1174066294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,13 +1493,24 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 50
-    m_Alignment: 4
+    m_Alignment: 6
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Controls\n\nKirjoita ohjeet t\xE4nne"
+  m_Text: 'CONTROLS
+
+
+    LeftHand Trigger       ==> Switch Light Color
+
+    RightHand
+    Trigger     ==> Teleport Out/In
+
+    LeftHand B -button   ==> Exit Application
+
+
+'
 --- !u!222 &1174066297
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1447,6 +1519,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174066294}
   m_CullTransparentMesh: 1
+--- !u!1 &1191717876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191717877}
+  m_Layer: 0
+  m_Name: ExternalPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1191717877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191717876}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -16}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440946595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1717,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: adfe16cfa6141cf4396c6b3f7bce5732, type: 2}
+  - {fileID: 2100000, guid: 251104dbecd7f384f863e0cf3cc3fa1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1670,6 +1773,7 @@ GameObject:
   - component: {fileID: 1863565542}
   - component: {fileID: 1863565541}
   - component: {fileID: 1863565540}
+  - component: {fileID: 1863565543}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -1723,6 +1827,22 @@ Transform:
   - {fileID: 578054827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1863565543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863565539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908f30b70080fa2429b41f5cc9fe4902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomPosition: {fileID: 106103166}
+  externalPosition: {fileID: 1191717877}
+  switchAction: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
 --- !u!1 &1893728899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2282,7 +2402,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 02475365b32e6654c864028337b068d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2607,3 +2727,5 @@ SceneRoots:
   - {fileID: 105329620}
   - {fileID: 567661279}
   - {fileID: 157869152}
+  - {fileID: 1191717877}
+  - {fileID: 106103166}
