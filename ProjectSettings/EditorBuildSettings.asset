@@ -9,6 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/OmaHuone.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9bd67605fe158cc48bc3fc213d7832d7,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1a019c0a7f95025499b077d338c274ed,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1342f92790537b149aca6e129116cde8,
