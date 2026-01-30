@@ -30,7 +30,9 @@ public class MagClassCameraVR : MonoBehaviour
 
         //  Magnify out of same line as XR camera
         Vector3 targetPoint = magnifierLens.position - direction;
-        transform.LookAt(targetPoint);
+        transform.rotation = Quaternion.LookRotation(targetPoint - transform.position,xrCamera.up);
+
+        //transform.LookAt(targetPoint);
 
         //  Zoomataan FOV:lla
         magCamera.fieldOfView = Mathf.Clamp(60f / zoomFactor, 1f, 179f);
