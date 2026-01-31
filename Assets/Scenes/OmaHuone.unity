@@ -2621,12 +2621,13 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "          Secret object and text can only be seen with magnifying glass
     and they are \n          found in the right corner of this wall. \n         
-    \n\n          CONTROLS\n\n          LeftHand Trigger                    ==> Switch
-    Light Color\n          RightHand Trigger                 ==> Teleport Out/In\n         
-    LeftHand B -button                ==> Exit Application\n          Left- or RightHand
-    grab        ==> grab object (hold) (Magnifying Glass)\n          Left- or RightHand
-    A -button ==> double rotation (hold) (extra credit)\n          Grabbing works
-    well only with two hands (sorry.. :(...)\n\n"
+    NOTE: Grabbing works well only with twohand grab (hold grab buttons at the same\n         
+    time) Also the mag glass works only in the upright position.\n          \n\n         
+    CONTROLS\n\n          LeftHand Trigger                    ==> Switch Light Color\n         
+    RightHand Trigger                 ==> Teleport Out/In\n          LeftHand B -button               
+    ==> Exit Application\n          Left- or RightHand grab        ==> grab object
+    (hold) (Magnifying Glass)\n          Left- or RightHand A -button ==> double
+    rotation (hold) (extra credit)\n          \n\n"
 --- !u!222 &1174066297
 CanvasRenderer:
   m_ObjectHideFlags: 0
