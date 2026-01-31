@@ -790,6 +790,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "B-button",
+                    "type": "Button",
+                    "id": "abedc2d2-2546-410a-8c2c-784155fc233f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -955,6 +964,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5eb5b2f0-a3cf-45c4-b1d9-71dc63c2f3b2",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B-button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1586,6 +1606,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "B-button",
+                    "type": "Button",
+                    "id": "c4aeac78-9a25-40ed-a86c-afa80de4ef4b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1740,6 +1769,17 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "349ad35e-21b2-41f7-ae5d-85a2a6d60c61",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B-button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
